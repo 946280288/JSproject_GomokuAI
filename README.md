@@ -1,0 +1,1 @@
+# JSproject_GomokuAI

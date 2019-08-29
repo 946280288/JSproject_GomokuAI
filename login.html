@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/chess.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group col-xs-5 col-xs-offset-3">
+                <h2>用户登录</h2>
+                <label class="control-label">用户名</label>
+                <input name="uname" type="text" placeholder="用户名为6-8位纯数字" class="form-control"/>
+                <label class="input-tip">请输入6-8位纯数字</label>
+                <label class="control-label">密码</label>
+                <input name="upwd" type="password" placeholder="密码为8位字母及数字组成" class="form-control"/>
+                <label class="input-tip">密码应为8位，且包含字母和数字</label>
+                <div class="clearfix"><p class="register-link">没有账号?<a href="#">去注册</a></p></div>
+                <button type="submit" name="user-login" class="btn btn-block btn-info">登录</button>
+            </div>
+        </form>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/login.js"></script>
+    <!-- $("form").submit(function(e){
+		var uname=$("[name=uname]").val();
+		var upwd=$(":password").val()
+		if(uname.length<3 || uname.length>9){
+			$("#uname-msg").html(`<img src='./failed.png'>用户名必须介于3~9位之间!`);
+			e.preventDefault();
+		}else{
+			$("#uname-msg").html(`<img src='./success.png'>`);
+			if(upwd.length<6 || upwd.length>8){
+				$("#upwd-msg").html(`<img src='./failed.png'>密码必须介于6~8位之间!`);
+				e.preventDefault();
+			}
+		}
+	}) -->
+</body>
+</html>
